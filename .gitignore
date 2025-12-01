@@ -1,42 +1,39 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Bun
+node_modules/
+bun.lockb
+.bun/
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# Environment
+.env
+.env.local
+.env.*.local
 
-# testing
-/coverage
-
-# next.js
-/.next/
-/out/
-
-# production
-/build
-
-# misc
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
 .DS_Store
-*.pem
 
-# debug
+# Logs
+logs/
+*.log
 npm-debug.log*
+pnpm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# local env files
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+# Testing
+coverage/
+.nyc_output/
 
-# vercel
-.vercel
+# Build
+dist/
+build/
+*.tsbuildinfo
 
-**/*.trace
-**/*.zip
-**/*.tar.gz
-**/*.tgz
-**/*.log
-package-lock.json
-**/*.bun
+# Misc
+.cache/
+temp/
+tmp/

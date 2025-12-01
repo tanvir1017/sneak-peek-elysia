@@ -1,0 +1,15 @@
+[install]
+# Optimize package installation
+auto = "auto"
+production = false
+optional = true
+
+[test]
+# Test configuration
+preload = ["./test/setup.ts"]
+coverage = true
+coverageThreshold = 80
+
+[run]
+# Hot reload on file changes
+hot = true
